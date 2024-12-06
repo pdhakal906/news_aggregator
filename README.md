@@ -1,11 +1,11 @@
 # For Backend
 Fist clone the repository.  
 
-Create and activate virtual environment.
+Create and activate **virtual environment**.
 
-Create a Postgres database and a user.
+Create a **Postgres** database and a user.
 
-Create a .env file and add database configuration: 
+Create a **.env** file and add database configuration: 
 
 **DATABASE_ENGINE = yourdatabaseengine** <br>
 **DATABASE_NAME = yourdatabasename** <br>
@@ -32,11 +32,11 @@ Create a superuser:
 Then start server to get the API up and running:
 **python manage.py runserver**
 
-# For the Crawler
+# For Crawler
 
 Open a new terminal.
 
-Switch to the scraper directory in the terminal:
+Switch to the **scraper** directory in the terminal:
 **cd scraper**
 
 Then run:
@@ -46,7 +46,7 @@ Then run:
 
 Install node js from: https://nodejs.org/en/download/package-manager
 
-Switch to the news-site directory which is inside the frontend directory.
+Switch to the **news-site** directory which is inside the **frontend** directory.
 
 Then run:
 **npm i**
@@ -54,5 +54,11 @@ Then run:
 After that run: 
 **npm start** 
 
+
+Make sure the Django server is running for the React application to show the news stored in database.
+
+You can periodically run the crawler to update new news.
+
+You can also delete news from the database via the Django admin panel.
 
 
