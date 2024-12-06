@@ -20,6 +20,12 @@ Then install requirements:
 After that, run migrations:
 **python manage.py migrate**
 
+Next, make migrations:
+**python manage.py makemigrations api**
+
+Run migrations again:
+**python manage.py migrate**
+
 Create a superuser:
 **python manage.py createsuperuser**
 
