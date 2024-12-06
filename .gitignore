@@ -5,6 +5,9 @@ __pycache__
 migrations
 .history
 
+scraper/*.json
+scraper/*.json
+
 node_modules
 .pnp
 .pnp.js
@@ -16,7 +19,6 @@ build
 .env.development.local
 .env.test.local
 .env.production.local
-*.json
 .env
 
 npm-debug.log*
