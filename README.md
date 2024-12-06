@@ -55,10 +55,10 @@ After that run:
 **npm start** 
 
 
-Make sure the Django server is running for the React application to show the news stored in database.
+Make sure the Django server is running for the UI to show the news stored in database.
 
-You can periodically run the crawler to update new news.
+You can periodically run the crawler to update new news items.
 
-You can also delete news from the database via the Django admin panel.
+You can also delete news from the database via the **Django admin panel**.
 
 
