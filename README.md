@@ -34,7 +34,9 @@ Then start server to get the API up and running:
 
 # For the Crawler
 
-Switch to the scraper directory in your terminal:
+Open a new terminal.
+
+Switch to the scraper directory in the terminal:
 **cd scraper**
 
 Then run:
