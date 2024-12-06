@@ -5,7 +5,7 @@ Create and activate **virtual environment**.
 
 Create a **Postgres** database and a user.
 
-Create a **.env** file and add database configuration: 
+Create a **.env** file and add database configuration inside it: 
 
 **DATABASE_ENGINE = yourdatabaseengine** <br>
 **DATABASE_NAME = yourdatabasename** <br>
