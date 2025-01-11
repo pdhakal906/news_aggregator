@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = "https://news-aggregator-backend-0kf6.onrender.com";
 
 export const fetchAllNews = async (page = 1) => {
   try {
