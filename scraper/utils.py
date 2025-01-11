@@ -1,10 +1,7 @@
 import logging
 import psycopg2
 from psycopg2 import sql
-from config import db_config
 from datetime import datetime
-
-i
 import os
 
 DATBASE_URL = os.getenv("DATABASE_URL")
