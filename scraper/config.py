@@ -21,6 +21,7 @@ ekantipur_categories = [
     "photo_feature",
 ]
 
+
 db_config = {
     "dbname": os.getenv("DATABASE_NAME"),
     "user": os.getenv("DATABASE_USERNAME"),

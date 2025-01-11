@@ -4,6 +4,11 @@ from psycopg2 import sql
 from config import db_config
 from datetime import datetime
 
+i
+import os
+
+DATBASE_URL = os.getenv("DATABASE_URL")
+
 
 class DatabaseUtils:
     def __init__(self):
@@ -12,7 +17,8 @@ class DatabaseUtils:
     def connect_to_db(self):
         """Establishes a connection to the database and creates a cursor."""
         try:
-            self.connection = psycopg2.connect(**db_config)
+            self.connection = psycopg2.connect(DATBASE_URL)
+
             self.cursor = self.connection.cursor()
             logging.info("Database connection successful")
         except Exception as e:
