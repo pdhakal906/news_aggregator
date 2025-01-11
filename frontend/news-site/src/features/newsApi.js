@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = "https://news-aggregator-backend-0kf6.onrender.com";
+const API_BASE_URL = process.env.REACT_APP_API_URL
 
 export const fetchAllNews = async (page = 1) => {
   try {
