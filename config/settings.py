@@ -134,6 +134,7 @@ STATIC_URL = "static/"
 if not DEBUG:
     ALLOWED_HOSTS = ["news-aggregator-backend-0kf6.onrender.com"]
     CORS_ALLOWED_ORIGINS = ["*"]
+    CORS_ALLOW_ALL_ORIGINS = True
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
