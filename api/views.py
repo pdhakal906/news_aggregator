@@ -1,4 +1,7 @@
 from rest_framework import generics
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework import status
 from itertools import zip_longest, chain
 from .serializers import NewsSerializer
 from .models import News
@@ -32,3 +35,17 @@ class ListNews(generics.ListAPIView):
 
         serializer = self.get_serializer(page, many=True)
         return self.get_paginated_response(serializer.data)
+
+
+class TestView(APIView):
+    def get(self, request, *args, **kwargs):
+        queryset = News.objects.first()
+
+        if queryset is None:
+            return Response({"message": "No news available"}, status=status.HTTP_200_OK)
+
+        message = "Everything OK"
+        news_data = NewsSerializer(queryset).data
+
+        response_data = {"message": message, "data": news_data}
+        return Response(response_data, status=status.HTTP_200_OK)
