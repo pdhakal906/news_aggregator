@@ -39,13 +39,5 @@ class ListNews(generics.ListAPIView):
 
 class TestView(APIView):
     def get(self, request, *args, **kwargs):
-        queryset = News.objects.first()
 
-        if queryset is None:
-            return Response({"message": "No news available"}, status=status.HTTP_200_OK)
-
-        message = "Everything OK"
-        news_data = NewsSerializer(queryset).data
-
-        response_data = {"message": message, "data": news_data}
-        return Response(response_data, status=status.HTTP_200_OK)
+        return Response({"message": "Everything OK"}, status=status.HTTP_200_OK)
