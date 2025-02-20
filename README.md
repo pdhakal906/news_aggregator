@@ -1,6 +1,6 @@
 # For Backend
 Fist clone the repository.  
-
+Then,
 Create and activate **virtual environment**.
 
 Create a **Postgres** database and a user.
