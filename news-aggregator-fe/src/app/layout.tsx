@@ -2,11 +2,12 @@
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
 
+
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
 
 export const metadata = {
-  title: 'My Mantine app',
-  description: 'I have followed setup instructions carefully',
+  title: 'News Aggregator',
+  description: 'News Aggregator',
 };
 
 export default function RootLayout({

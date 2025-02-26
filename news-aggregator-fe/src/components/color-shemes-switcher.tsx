@@ -8,10 +8,10 @@ export function ColorSchemesSwitcher() {
 
   return (
     <Group>
-      <Button onClick={() => setColorScheme("light")}>Light</Button>
       <Button onClick={() => setColorScheme("dark")}>Dark</Button>
+      <Button onClick={() => setColorScheme("light")}>Light</Button>
       <Button onClick={() => setColorScheme("auto")}>Auto</Button>
-      <Button onClick={clearColorScheme}>Clear</Button>
+      <Button onClick={clearColorScheme}>Reset</Button>
     </Group>
   );
 }
