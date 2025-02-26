@@ -1,7 +1,7 @@
 import { Card, Group, Text } from '@mantine/core'
 import React from 'react'
 import { ColorSchemesSwitcher } from './color-shemes-switcher'
-import CustomThemeSwitcher from './CustomThemeSwitcher'
+// import CustomThemeSwitcher from './CustomThemeSwitcher'
 
 const Header = () => {
   return (

@@ -7,7 +7,8 @@ export default async function Home({
 }: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
-  const { page = '1', sort = 'asc', query = '' } = await searchParams
+  // const { page = '1', sort = 'asc', query = '' } = await searchParams
+  const { page = '1' } = await searchParams
 
   return (
     <>
