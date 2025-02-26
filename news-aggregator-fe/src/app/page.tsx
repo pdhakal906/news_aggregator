@@ -1,8 +1,18 @@
-import BaseLayout from "@/components/BaseLayout";
-import Image from "next/image";
+'use server';
+import Header from "@/components/Header";
+import NewsData from "@/components/NewsData";
 
-export default function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const { page = '1', sort = 'asc', query = '' } = await searchParams
+
   return (
-    <BaseLayout />
+    <>
+      <Header />
+      <NewsData page={page} />
+    </>
   );
 }

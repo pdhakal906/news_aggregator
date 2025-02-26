@@ -1,12 +1,12 @@
-import { Badge, Box, Button, Card, Group, Image, Text } from '@mantine/core'
+'use client';
+import { Box, Card, Text, Image } from '@mantine/core'
 import React from 'react'
-import { NewsPropType } from './types';
+import { NewsItemType } from './types';
+interface NewsCardProps {
+  newsItem: NewsItemType;
+}
 
-
-
-const NewsCard = (props: NewsPropType) => {
-  const { newsItem } = props ?? {};
-
+const NewsCard = ({ newsItem }: NewsCardProps) => {
   return (
     <Box>
       <Card shadow="sm"
@@ -23,14 +23,12 @@ const NewsCard = (props: NewsPropType) => {
           />
 
         </Card.Section>
-
         <Text fw={"unset"} size="lg" mt="md">
           {newsItem?.title}
         </Text>
       </Card>
-
     </Box>
-  )
+  );
 }
 
 export default NewsCard
