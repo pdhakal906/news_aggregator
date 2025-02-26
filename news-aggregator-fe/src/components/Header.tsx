@@ -1,7 +1,8 @@
 import { Card, Group, Text } from '@mantine/core'
 import React from 'react'
-import { ColorSchemesSwitcher } from './color-shemes-switcher'
-// import CustomThemeSwitcher from './CustomThemeSwitcher'
+import CustomThemeSwitcher from './CustomThemeSwitcher'
+import Link from 'next/link'
+
 
 const Header = () => {
   return (
@@ -10,17 +11,21 @@ const Header = () => {
         shadow='lg'
         h={"60"}>
         <Group justify='space-between'>
-          <Text
-            ml={20}
-            size="2rem"
-            fw={900}
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'violet', deg: 180 }}
+          <Link href="/" passHref
+            style={{ cursor: 'pointer', textDecoration: 'none' }}
           >
-            NEWS HUB
-          </Text>
-          <ColorSchemesSwitcher />
-          {/* <CustomThemeSwitcher /> */}
+            <Text
+              ml={20}
+              size="2rem"
+              fw={900}
+              variant="gradient"
+              gradient={{ from: 'blue', to: 'violet', deg: 180 }}
+
+            >
+              NEWS HUB
+            </Text>
+          </Link>
+          <CustomThemeSwitcher />
         </Group>
       </Card>
     </header>
