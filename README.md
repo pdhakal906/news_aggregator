@@ -1,4 +1,4 @@
-### See the deployed version [here](https://news-aggregator-next.onrender.com/)
+### See the deployed version [here](https://news-aggregator-fe-next.vercel.app/)
 
 # For Backend
 Fist clone the repository.  
