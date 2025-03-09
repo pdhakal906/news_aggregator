@@ -1,5 +1,6 @@
 from scrapy.crawler import CrawlerProcess
-from scrapy.utils.project import get_project_settings
+from sh_scrapy.utils import get_project_settings
+
 
 
 
