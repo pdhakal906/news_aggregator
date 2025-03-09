@@ -6,7 +6,6 @@ import os
 
 DATBASE_URL = os.getenv("DATABASE_URL")
 
-
 class DatabaseUtils:
     def __init__(self):
         self.connect_to_db()

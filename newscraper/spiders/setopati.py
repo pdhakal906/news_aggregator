@@ -2,7 +2,7 @@ import scrapy
 import re
 import json
 from datetime import datetime
-from utils import DatabaseUtils
+from newscraper.utils import DatabaseUtils
 
 
 class SetopatiSpider(scrapy.Spider):

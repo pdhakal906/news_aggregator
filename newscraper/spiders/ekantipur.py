@@ -2,8 +2,8 @@ import scrapy
 import re
 import json
 from datetime import datetime
-from utils import DatabaseUtils
-from config import ekantipur_categories
+from newscraper.utils import DatabaseUtils
+from newscraper.config import ekantipur_categories
 
 
 class EkantipurSpider(scrapy.Spider):
