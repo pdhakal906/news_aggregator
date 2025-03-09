@@ -9,6 +9,8 @@ settings = get_project_settings()
 
 DATBASE_URL = settings.get("DATBASE_URL")
 
+logging.info(f"$$$$DATABASE URL $$$$ {DATBASE_URL}")
+
 
 class DatabaseUtils:
     def __init__(self):
