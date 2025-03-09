@@ -54,7 +54,7 @@ CONCURRENT_REQUESTS = 1
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-  'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+   "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 1,
 }
 
 # Enable or disable extensions
