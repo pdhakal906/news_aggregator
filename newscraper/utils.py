@@ -7,7 +7,8 @@ import os
 
 settings = get_project_settings()
 
-DATBASE_URL = settings.DATBASE_URL
+DATBASE_URL = settings.get("DATBASE_URL")
+
 
 class DatabaseUtils:
     def __init__(self):
