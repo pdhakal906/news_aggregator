@@ -7,9 +7,9 @@ import os
 
 settings = get_project_settings()
 
-DATBASE_URL = settings.get("DATBASE_URL")
+DATABASE_URL = settings.get("DATABASE_URL")
 
-logging.info(f"$$$$DATABASE URL $$$$ {DATBASE_URL}")
+logging.info(f"$$$$DATABASE URL $$$$ {DATABASE_URL}")
 
 
 class DatabaseUtils:
@@ -19,7 +19,7 @@ class DatabaseUtils:
     def connect_to_db(self):
         """Establishes a connection to the database and creates a cursor."""
         try:
-            self.connection = psycopg2.connect(DATBASE_URL)
+            self.connection = psycopg2.connect(DATABASE_URL)
 
             self.cursor = self.connection.cursor()
             logging.info("Database connection successful")
