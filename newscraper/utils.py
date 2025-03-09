@@ -1,13 +1,13 @@
 import logging
 import psycopg2
 from psycopg2 import sql
-from sh_scrapy.utils import get_project_settings
+from scrapy.utils.project import get_project_settings
 from datetime import datetime
 import os
 
 settings = get_project_settings()
 
-DATABASE_URL = settings.get("DATABASE_URL")
+DATABASE_URL = settings.get("NEWS_DATABASE_URL")
 
 logging.info(f"$$$$DATABASE URL $$$$ {DATABASE_URL}")
 

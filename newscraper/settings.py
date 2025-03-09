@@ -6,11 +6,14 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+from sh_scrapy.utils import get_project_settings
 
 BOT_NAME = "newscraper"
 
 SPIDER_MODULES = ["newscraper.spiders"]
 NEWSPIDER_MODULE = "newscraper.spiders"
+settings = get_project_settings()
+NEWS_DATABASE_URL = settings.get("DATABASE_URL")
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
