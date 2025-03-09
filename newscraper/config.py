@@ -22,10 +22,10 @@ ekantipur_categories = [
 ]
 
 
-db_config = {
-    "dbname": os.getenv("DATABASE_NAME"),
-    "user": os.getenv("DATABASE_USERNAME"),
-    "password": os.getenv("DATABASE_PASSWORD"),
-    "host": os.getenv("DATABASE_HOST"),
-    "port": os.getenv("DATABASE_PORT"),
-}
+# db_config = {
+#     "dbname": os.getenv("DATABASE_NAME"),
+#     "user": os.getenv("DATABASE_USERNAME"),
+#     "password": os.getenv("DATABASE_PASSWORD"),
+#     "host": os.getenv("DATABASE_HOST"),
+#     "port": os.getenv("DATABASE_PORT"),
+# }

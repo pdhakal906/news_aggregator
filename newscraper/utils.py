@@ -1,10 +1,13 @@
 import logging
 import psycopg2
 from psycopg2 import sql
+from sh_scrapy.utils import get_project_settings
 from datetime import datetime
 import os
 
-DATBASE_URL = os.getenv("DATABASE_URL")
+settings = get_project_settings()
+
+DATBASE_URL = settings.DATBASE_URL
 
 class DatabaseUtils:
     def __init__(self):
