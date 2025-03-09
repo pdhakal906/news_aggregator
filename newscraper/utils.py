@@ -9,9 +9,6 @@ settings = get_project_settings()
 
 DATABASE_URL = settings.get("NEWS_DATABASE_URL")
 
-logging.info(f"$$$$DATABASE URL $$$$ {DATABASE_URL}")
-
-
 class DatabaseUtils:
     def __init__(self):
         self.connect_to_db()
